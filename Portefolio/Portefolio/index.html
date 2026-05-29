@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#accueil" class="nav-logo">Mon Portfolio</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== ACCUEIL ========== -->
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <p class="hero-hello">Bonjour, je suis</p>
+      <h1 class="hero-name">Serigne Fallou BA</h1>
+      <h2 class="hero-title">Développeur <span class="highlight">creatif</span></h2>
+      <p class="hero-desc">
+        Je crée des sites web modernes, rapides et accessibles.
+        Bienvenue sur mon portfolio !
+      </p>
+      <div class="hero-buttons">
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>↓</span>
+    </div>
+  </section>
+
+  <!-- ========== À PROPOS ========== -->
+  <section id="apropos" class="section">
+    <div class="container">
+      <h2 class="section-title">À <span class="highlight">propos</span></h2>
+      <div class="apropos-grid">
+        <div class="apropos-text">
+          <p>
+            Salut ! Je m'appelle <strong>BA Serigne Fallou</strong> et je suis
+            passionné par le développement web. J'aime créer des
+            expériences numériques pour mes besoins.
+          </p>
+          <div class="skills">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">VS</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">BDD</span>
+          </div>
+        </div>
+        <div class="apropos-card">
+          <div style="display:flex; justify-content:center; margin-bottom:1.5rem;">
+            <img src="images/moi.jpg" alt="Photo de moi"
+            style="width:150px; height:150px; border-radius:50%;
+              object-fit:cover; object-position:center top;
+              border: 3px solid var(--couleur-principale);" />
+            </div>
+          <ul class="card-info">>
+            <li>📍 Toulouse, France</li>
+            <li>🎓 Étudiant en Informatique</li>
+            <li>💼 Disponible pour projets</li>
+            <li>🌐 Français / Anglais / Italien</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJETS ========== -->
+  <section id="projets" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Mes <span class="highlight">projets</span></h2>
+      <div class="projets-grid">
+
+        <div class="projet-card">
+          <div class="projet-icon">🌐</div>
+          <h3>Ce Portfolio</h3>
+          <p>Mon premier site web créé avec HTML, CSS et JavaScript. Design responsive et moderne.</p>
+          <div class="projet-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+          <a href="#" class="btn btn-small">Voir le projet →</a>
+        </div>
+
+        <div class="projet-card">
+          <div class="projet-icon">📝</div>
+          <h3>Projet 2</h3>
+          <p>Description de ton deuxième projet. Remplace ce texte par le vrai contenu bientôt !</p>
+          <div class="projet-tags">
+            <span>HTML</span><span>CSS</span>
+          </div>
+          <a href="#" class="btn btn-small">Voir le projet →</a>
+        </div>
+
+        <div class="projet-card">
+          <div class="projet-icon">🎨</div>
+          <h3>Projet 3</h3>
+          <p>Description de ton troisième projet. Tu peux modifier ces cartes comme tu veux !</p>
+          <div class="projet-tags">
+            <span>JavaScript</span><span>CSS</span>
+          </div>
+          <a href="#" class="btn btn-small">Voir le projet →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Me <span class="highlight">contacter</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Tu as un projet en tête ? Une question ? N'hésite pas à m'écrire !</p>
+          <ul class="contact-list">
+            <li>📧 <a href="mailto:bafallou56@gmail.com">bafallou56@gmail.com</a></li>
+            <li>💼 <a href="https://www.linkedin.com/in/seigne-fallou-ba-122b2b3bb/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li>🐙 <a href="https://github.com/sfb56025" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <input type="text" placeholder="Ton nom" required />
+          <input type="email" placeholder="Ton email" required />
+          <textarea rows="5" placeholder="Ton message..." required></textarea>
+          <button type="submit" class="btn btn-primary">Envoyer le message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>© 2026 SFB</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
